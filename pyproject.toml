@@ -1,0 +1,23 @@
+[project]
+name = "pytorch-cnn-learning"
+version = "0.1.0"
+description = "PyTorch CNN Learning Curriculum - 7 units from basics to practical project"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "tqdm>=4.65.0",
+    "scikit-learn>=1.3.0",
+    "ipykernel>=6.25.0",
+    "jupyter>=1.0.0",
+    "seaborn>=0.12.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
