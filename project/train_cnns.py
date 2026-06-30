@@ -290,6 +290,8 @@ def main() -> None:
         dataset, batch_size=16, shuffle=True,
         num_workers=NUM_WORKERS, pin_memory=True, drop_last=False,
     )
+    # 将 DataLoader 转换为迭代器
+    # 从迭代器中取出下一个元素（即一个 batch）
     batch = next(iter(loader))
     data, labels = batch
     print(f"Batch data: {data.shape}")
