@@ -55,12 +55,12 @@ def get_device() -> torch.device:
 
 
 def set_seed(seed: int = SEED) -> None:
-    torch.manual_seed(seed)
-    np.random.seed(seed)
+    torch.manual_seed(seed) # 固定torch随机种子
+    np.random.seed(seed) # 固定numpy随机种子
     if torch.cuda.is_available():
-        torch.cuda.manual_seed(seed)
-        torch.backends.cudnn.deterministic = True
-        torch.backends.cudnn.benchmark = True
+        torch.cuda.manual_seed(seed) # 固定cuda随机种子
+        torch.backends.cudnn.deterministic = True # 固定cudnn随机种子
+        torch.backends.cudnn.benchmark = True # 开启cudnn benchmark模式
 
 
 # ---------------------------------------------------------------------------
