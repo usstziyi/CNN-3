@@ -25,3 +25,6 @@ openbci-gui/
 
 # code-runner
 tempCodeRunnerFile.py
+
+# tensorboard
+runs/
