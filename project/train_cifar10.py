@@ -98,7 +98,6 @@ class BaselineCNN(nn.Module):
 
 
 class ResidualBlock(nn.Module):
-    expansion = 1
 
     def __init__(self, in_planes: int, planes: int, stride: int = 1):
         super().__init__()
